@@ -16,17 +16,19 @@ https://opentofu.org/docs/intro/install/
 - default.tfvars
 ```
 
-3. Init
+3. Download `openrc.sh` from OpenStack UI and execute. The environment variables will be setup.
+
+4. Init
 ```
 tofu init
 ```
 
-4. Create resources
+5. Create resources
 ```
 tofu apply --var-file="default.tfvars"
 ```
 
-5. Destroy resources
+6. Destroy resources
 ```
 tofu destroy --var-file="default.tfvars"
 ```
